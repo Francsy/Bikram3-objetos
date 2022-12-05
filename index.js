@@ -82,30 +82,68 @@ Impresora.imprimiendo = objeto;
 // Declaración
 //  13.- Crea un objeto de nombre Noticia que tenga las propiedades: titular, cuerpo
 
+let Noticia = {titular: "", cuerpo: ""}
+
 //  14.- Crea un objeto de nombre Persona que tenga las propiedades: nombre, apellidos, edad
+
+let Persona = {nombre: "", apellidos: "", edad: ""}
 
 //  15.- Crea un objeto de nombre Avion que tenga las propiedades: numPasajeros, función despegar (imprime por consola 'despegando'), función volar (imprime por consola llegando al destino), función aterrizar (imprime por consola 'aterrizando'
 
+let Avion = {
+    numPasajeros: "",
+    despegar: function(){console.log("despegando")},
+    volar: function(){console.log("llegando al destino")},
+    aterrizar: function() {console.log("aterrizando");}
+}
 //  16.- Crea un objeto de nombre Paquete que tenga las propiedades: array contenido con todos los objetos que contenga el paquete
 
+let Paquete = {contenido: []}
+
 //  17.- Crea un objeto de nombre Pais que tenga las propiedades: numHabitantes, continente, gentilicio
+
+let Pais = {numHabitantes: "", continente: "", gentilicio: ""}
 
 // Lectura de propiedades
 //  18.- Dado un objeto de nombre O_Error obtén el valor de la propiedad codigo guardándolo en la variable codError
 
+let codError = O_Error.codigo;
+
 //  19.- Dado un objeto de nombre Grupo obtén el valor de la propiedad array integrantes guardándolo en la variable integrantes
+
+let integrantes = Grupo["integrantes"]
 
 //  20.- Dado un objeto de nombre Impresora obtén el valor de la propiedad objeto tinta{rojo, verde, azul} guardándolo en la variable nivelesTinta
 
+let nivelesTinta = Impresora["tinta"];
+
 //  21.- Dado un objeto de nombre Pantalla obtén el valor de la propiedad array bidimensional pixeles guardándolo en la variable pixeles
 
+let pixeles = Pantalla.pixeles
+
 //  22.- Dado un objeto de nombre Movil obtén el valor de la propiedad especificaciones con ["especificaciones"] guardándolo en la variable especificaciones
+
+const especificaciones = Movil.especificaciones;
 
 // Modificación de propiedades
 //  23.- Dado un objeto de nombre Grupo modifica el valor de la propiedad numIntegrantes por el valor 5
 
+Grupo.numIntegrantes = 5;
+
 //  24.- Dado un objeto de nombre Pantalla modifica el valor de la propiedad dimensiones por el valor 1920x1080
 
+Pantalla.dimensiones = "1920x1080";
 //  25.- Dado un objeto de nombre Led modifica el valor de la propiedad encendido por el valor false si vale true y true si vale false
 
+Led.encendido === true ? Led.encendido = false : Led.encendido = true; 
+
+/* OTRA FORMA:
+if (Led.encendido === true) {
+    Led.encendido = false;
+} else {
+    Led.encendido = true
+} */
+
 //  26.- Dado un objeto de nombre Movil modifica el valor de la propiedad temperatura por el valor 20º
+
+Movil["temperatura"] = "20º"
