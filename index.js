@@ -8,26 +8,24 @@ let Coche = {
 
 //  2.- Crea un objeto de nombre Casa que tenga las propiedades: codPostal, calle, portal, piso
 
-let Casa = {codPostal: "", calle: "", portal: "", piso:""}
+let Casa = { codPostal: "", calle: "", portal: "", piso: "" }
 
 //  3.- Crea un objeto de nombre FullStackDeveloper que tenga las propiedades: array lenguajes, array proyectos
 
-let FullStackDeveloper = {lenguajes: [], proyectos: []}
-
+let FullStackDeveloper = { lenguajes: [], proyectos: [] }
 
 //  4.- Crea un objeto de nombre Perro que tenga las propiedades: nombre, raza, color, edad, función ladrar (imprime por consola un ladrido), función popo (devuelve el valor: Math.random() * 3)
-
 
 let Perro = {
     nombre: "",
     raza: "",
     color: "",
     edad: "",
-    ladrar: function(){
+    ladrar: function () {
         console.log("woof")
     },
-    popo: function(){
-        return Math.random()*3;
+    popo: function () {
+        return Math.random() * 3;
     }
 }
 
@@ -74,7 +72,7 @@ Concierto.fecha = new Date();
 
 //  12.- Dado un objeto de nombre Impresora modifica el valor de la propiedad imprimiendo por el valor objeto con propiedades: nombreArchivo, copias, numPaginas
 
-let objeto = {nombreArchivo: "", copias: "", numPaginas: ""}
+let objeto = { nombreArchivo: "", copias: "", numPaginas: "" }
 Impresora.imprimiendo = objeto;
 
 // Iteraciones ⚔️ Pair Programming ⚔️
@@ -82,27 +80,27 @@ Impresora.imprimiendo = objeto;
 // Declaración
 //  13.- Crea un objeto de nombre Noticia que tenga las propiedades: titular, cuerpo
 
-let Noticia = {titular: "", cuerpo: ""}
+let Noticia = { titular: "", cuerpo: "" }
 
 //  14.- Crea un objeto de nombre Persona que tenga las propiedades: nombre, apellidos, edad
 
-let Persona = {nombre: "", apellidos: "", edad: ""}
+let Persona = { nombre: "", apellidos: "", edad: "" }
 
 //  15.- Crea un objeto de nombre Avion que tenga las propiedades: numPasajeros, función despegar (imprime por consola 'despegando'), función volar (imprime por consola llegando al destino), función aterrizar (imprime por consola 'aterrizando'
 
 let Avion = {
     numPasajeros: "",
-    despegar: function(){console.log("despegando")},
-    volar: function(){console.log("llegando al destino")},
-    aterrizar: function() {console.log("aterrizando");}
+    despegar: function () { console.log("despegando") },
+    volar: function () { console.log("llegando al destino") },
+    aterrizar: function () { console.log("aterrizando"); }
 }
 //  16.- Crea un objeto de nombre Paquete que tenga las propiedades: array contenido con todos los objetos que contenga el paquete
 
-let Paquete = {contenido: []}
+let Paquete = { contenido: [] }
 
 //  17.- Crea un objeto de nombre Pais que tenga las propiedades: numHabitantes, continente, gentilicio
 
-let Pais = {numHabitantes: "", continente: "", gentilicio: ""}
+let Pais = { numHabitantes: "", continente: "", gentilicio: "" }
 
 // Lectura de propiedades
 //  18.- Dado un objeto de nombre O_Error obtén el valor de la propiedad codigo guardándolo en la variable codError
@@ -135,7 +133,7 @@ Grupo.numIntegrantes = 5;
 Pantalla.dimensiones = "1920x1080";
 //  25.- Dado un objeto de nombre Led modifica el valor de la propiedad encendido por el valor false si vale true y true si vale false
 
-Led.encendido === true ? Led.encendido = false : Led.encendido = true; 
+Led.encendido === true ? Led.encendido = false : Led.encendido = true;
 
 /* OTRA FORMA:
 if (Led.encendido === true) {
@@ -146,4 +144,4 @@ if (Led.encendido === true) {
 
 //  26.- Dado un objeto de nombre Movil modifica el valor de la propiedad temperatura por el valor 20º
 
-Movil["temperatura"] = "20º"
+Movil["temperatura"] = "20º";
